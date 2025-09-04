@@ -37,6 +37,13 @@ dependencies {
 
 	// Dependencia de H2 para pruebas
 	runtimeOnly 'com.h2database:h2:2.2.224'
+
+	// Dependencia de MapStruct
+	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+	// Procesador de anotaciones para generar el código del mapper
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+	// Si usas Lombok con MapStruct, agrega esta dependencia
+	annotationProcessor 'org.projectlombok:lombok'
 }
 
 tasks.named('test') {
